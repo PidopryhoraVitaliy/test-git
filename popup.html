@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <title>Grabley - Dropshipping Search Tools</title>
+  <script src="jquery.js"></script>
+  <script src="popup.js"></script>
+  <link href="css/popup.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="mainDiv">
+	
+        <a href="https://chrome.google.com/webstore/detail/grabley-dropshipping-sear/hppdgjpcbnbfapnailmeiibngpolplao" target="_blank"><b>Grabley - Dropshipping Search Tools</b></a>
+        
+        <br>
+        
+        <div id="head2">
+            <div id="reliz">v.х.х.хх</div>
+            <div id="language">
+                <span class="language" id="language-ru"><img src="images/russia-16.png">[ru]</span>
+                &nbsp;
+                <span class="language" id="language-en"><img src="images/united-states-16.png">[en]</span>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div>
+            <div class="left-div">
+                <a id="authorizationLink" href="https://extension.grabley.net/" target="_blank">
+                    <div id="authorization-href"></div>
+                </a>
+            </div>
+            <div class="right-div">
+                <a id="logoutLink" href="">
+                    <div id="logoutLink-text">logout</div>
+                </a>
+            </div>
+        </div>
+        
+        <span id="comment-text">full functionality will be available after login</span>
+        
+        <hr>
+        
+        <table>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="mainSwitch"></input></td>
+                <td><b id="mainSwitch-text">on/off extension</b></td>
+            </tr>
+        </table>
+        
+        <hr>
+
+        <b class = 'headers-sites'>amazon:</b>
+        <table>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="hidePrime"></input></td>
+                <td class="cost-options" id="hidePrime-text">hide - prime items</td>
+            </tr>
+            
+            <!--#31-->
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="hideSoldByAmazon"></input></td>
+                <td class="cost-options" id="hideSoldByAmazon-text">hide - sold by amazon</td>
+            </tr>
+            
+            <!--#33-->
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="hideItemsWithVariation"></input></td>
+                <td class="" id="hideItemsWithVariation-text">hide - items with variation</td>
+            </tr>
+
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="onlyCurrentlyUnavailable"></input></td>
+                <td class="cost-options" id="onlyCurrentlyUnavailable-text">only - currently unavailable</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="buttonSearchOnWalmart"></input></td>
+                <td id="buttonSearchOnWalmart-text">button - search on walmart</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="buttonSearchOnEbay"></input></td>
+                <td id="buttonSearchOnEbay-text">button - search on ebay</td>
+            </tr>
+            <tr class = 'level2'>
+                <td></td>
+                <td><input type="checkbox" class="options checkbox" id="buttonSearchOnEbay_BuyItNow"><span id="buttonSearchOnEbay_BuyItNow-text"> buy it now</span></input></td>
+            </tr>
+            <tr class = 'level2'>
+                <td></td>
+                <td><input type="checkbox" class="options checkbox" id="buttonSearchOnEbay_ItemLocation_NorthAmerica"><span id="buttonSearchOnEbay_ItemLocation_NorthAmerica-text"> item location</span></input></td>
+            </tr>
+            <!--#36
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="quickSearchOnEbay"></input></td>
+                <td class="cost-options" id="quickSearchOnEbay-text">quick search on ebay</td>
+            </tr>
+            -->
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="showAsin"></input></td>
+                <td id="showAsin-text">show - asin</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="showBuyBox"></input></td>
+                <td id="showBuyBox-text">show - BuyBox</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="getBSR"></input></td>
+                <td id="getBSR-text">show - best sellers rank</td>
+            </tr>
+            <tr class = 'level2'>
+                <td></td>
+                <td><input type="checkbox" class="options checkbox" id="hideEmptyBSR"><span class="cost-options" id="hideEmptyBSR-text"> hide - empty BSR</span></input></td>
+            </tr>
+            <tr class = 'level2'>
+                <!-- <td colspan=2> <input class="options number" id="maxValBSR"> </input> hide if BSR less than the value </td> -->
+                <td></td>
+                <td><input class="options number" id="maxValBSR"> </input><span class="cost-options" id="maxValBSR-text"> hide if BSR less than the value</span></td>
+            </tr>
+        </table>
+        
+        <b class = 'headers-sites'>ebay:</b>
+        <table>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="showMargin"></input></td>
+                <td><span id="showMargin-text">show - % margin</span> / <span id="amazonFee-text">amazon fee: </span><input class="options number" id="amazonFee" value="15"> </input></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="ebay_button_DefaultFilters"></input></td>
+                <td id="ebay_button_DefaultFilters-text">button - New / Buy It Now / N.America</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="buttonSearchOnAmazon"></input></td>
+                <td id="buttonSearchOnAmazon-text">button - search on amazon</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="hideDontSold"></input></td>
+                <td class="cost-options" id="hideDontSold-text">hide - don't sold</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="ebay_only_FastAndFree"></input></td>
+                <td id="ebay_only_FastAndFree-text">only - fast 'n free</td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input class="options string" id="phone"></input>
+                    <span id="phone-text"> - phone</span>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input class="options string" id="ebay_MessageToSeller"></input>
+                    <span class="" id="ebay_MessageToSeller-text"> - message</span>
+                </td>
+            </tr>
+
+            
+            <!--<tr>
+                <td></td>
+                <td><br></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>test / проверка
+                </td>
+            </tr>-->
+            
+
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="ebay_show_QuantityAvailable"></input></td>
+                <td class="cost-options" id="ebay_show_QuantityAvailable-text">show - quantity available</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="ebay_show_Delivery"></input></td>
+                <td class="cost-options" id="ebay_show_Delivery-text">show - delivery</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="ebay_show_Returns"></input></td>
+                <td class="cost-options" id="ebay_show_Returns-text">show - returns</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="ebay_show_Brand"></input></td>
+                <td class="cost-options" id="ebay_show_Brand-text">show - brand</td>
+            </tr>
+
+        </table>
+
+        <hr>
+
+        <table>
+            <tr>
+                <td><input type="checkbox" class="options checkbox" id="useCrossBrowserAddressCopying"></input></td>
+                <td class="cost-options" id="useCrossBrowserAddressCopying-text">use cross-browser address copying</td>
+            </tr>
+        </table>
+
+    </div>
+	
+</body>
+
+</html>
